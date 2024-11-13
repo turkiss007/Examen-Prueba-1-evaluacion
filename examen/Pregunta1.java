@@ -1,14 +1,8 @@
 package examen;
 
-import java.util.*;
-
-public class evaluarNumero {
+public class Pregunta1 {
     
-    public static void main(String[] args) {
-        @SuppressWarnings("resource")
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Introduzca un número entero: ");
-        int n = leer.nextInt();
+    public static void evaluarNumero (int n) {
         if(n>0){
             if (n%2==0){
                 System.out.println("El numero es positivo y par");
@@ -22,5 +16,13 @@ public class evaluarNumero {
         if (n==0){
             System.out.println("El numero es cero");
         }
+    }
+
+    public static void main(String[] args) {
+        evaluarNumero(-5);
+        evaluarNumero(0);
+        evaluarNumero(8);
+        evaluarNumero(15);
+        
     }
 }
